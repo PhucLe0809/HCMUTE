@@ -1,0 +1,61 @@
+===== TÊN CHƯƠNG TRÌNH: PHLversion1
+
+===== NHÓM TÁC GIẢ:
+	1, LÊ HỒNG PHÚC
+	2, PHẠM KHÁNH HUY
+	3, TRANG KIM LỢI
+
+===== CHỨC NĂNG CHÍNH:
+	1, Xử lí và in ra bảng Chân trị cho một dạng mệnh đề.
+	2, Cho biết mệnh đề đã cho là hằng ĐÚNG, hằng SAI hay vừa là hằng ĐÚNG, vừa là hằng SAI.
+	3, Kiểm tra phản xạ, phản xứng, đối xứng, bắc cầu của một quan hệ R.
+	4, Tìm phần tử lớn nhất, phần tử bé nhất, phần tử tối đại, phần tử tối tiểu.
+
+===== CHỨC NĂNG ĐI KÈM:
+	1, In dạng hậu tố của dạng mệnh đề.
+	2, In tính toán từng bước với dạng mệnh đề.
+	3, In các bộ Phản xạ, Đối xứng, Bắc cầu, Phản xứng.
+
+===== FILE INPUT: LOGIC.INP
+	FILE OUTPUT - CLAUSE: CLAUSE.OUT
+	FILE OUTPUT - RELATIONSHIP: RELATIONSHIP.OUT
+
+===== Định dạng INPUT FILE: dữ liệu vào từ file LOGIC.INP
+	Dòng 1: chứa 2 số nguyên dương n và m (n, m <= 10) lần lượt là số dạng mệnh đề và số quan hệ R.
+	Trong n dòng tiếp theo: mỗi dòng ghi 1 dạng mệnh đề.
+	Trong các dòng tiếp theo: ghi m quan hệ R có định dạng như sau:
+		Dòng dầu tiên: chứa 2 số nguyên dương s và t (s <= 100, t <= s*s) lần lượt là số phần tử của tập X và số phần tử của quan hệ R.
+		Dòng tiếp theo: chứa s số nguyên dương ai (1 <= ai <= 100, ai thuộc tập X) là các phần tử của tập X.
+		Trong t dòng tiếp theo: chứa 2 số nguyên dương u, v (mỗi số cách nhau 1 khoảng trắng; u, v thuộc tập X).
+	(Dữ liệu đầu vào phải luôn đảm bảo tính đúng đắn, dữ liệu được giới hạn để đảm bảo tốc độ thực hiện Chương trình)
+
+===== Định dạng OUTPUT FILE: tùy vào yêu cầu người dùng sẽ có thể xuất ra nhiều định dạng khác nhau. Nhưng đảm bảo đáp ứng đầy đủ các CHỨC NĂNG CHÍNH.
+
+===== Ý NGHĨA CÁC TỪ TRONG OUTPUT CỦA CHƯƠNG TRÌNH:
+	POSTFIX: Dạng mệnh đề được biểu diễn dạng hậu tố.
+	TRUTH TABLE: Bảng chân trị.
+	STEP BY STEP: Tính toán từng bước.
+	STANDARDIZED: Định dạng mệnh đề của Chương trình.
+	RESULT: Kết quả.
+	CONSTANT TRUE: Hằng Đúng.
+	CONSTANT FALSE: Hằng Sai.
+	IS BOTH TRUE AND FALSE: Vừa là hằng Đúng, vừa là hằng Sai.
+	PROPERIES OF R: Tính chất của R.
+	HASSE GRAPH: Đồ thị Hasse.
+	Not reflective!: Không có tính Phản xạ.
+	Reflective: Có tính Phản xạ.
+	Unsymmetrical!: Không có tính Đối xứng.
+	Symmetrical: Có tính Đối xứng.
+	Not transitivel!: Không có tính Bắt cầu.
+	Transitive: Có tính Bắt cầu.
+	No antagonism!: Không có tính Phản xứng.
+	Disproportionate: Có tính Phản xứng.
+	R is not a orderly relationship on episode X: R không phải là một mối quan hệ có tính thứ tự trên tập X.
+	The largest element: Phần tử Lớn nhất.
+	The smallest element: Phần tử Nhỏ nhất.
+	The relatively largest element: Phần tử Tối đại.
+	The relatively smallest element: Phần tử Tối tiểu.
+	does not exit!: Không tồn tại.
+	
+===== THÔNG BÁO LỖI:
+	INVALID BRACKETS!!!: Các cặp ngoặc không hợp lệ!

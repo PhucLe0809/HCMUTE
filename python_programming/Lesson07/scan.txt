@@ -1,0 +1,128 @@
+ID:SV000
+Full name:Mike Peter
+City:New York
+Diem Toan:9
+Diem Ly:8
+Diem Hoa:10
+Average Score:9.0
+------------------------
+ID:SV001
+Full name:Jane Smith
+City:Los Angeles
+Diem Toan:7
+Diem Ly:8
+Diem Hoa:9
+Average Score:8.0
+------------------------
+ID:SV002
+Full name:John Doe
+City:Chicago
+Diem Toan:6
+Diem Ly:7
+Diem Hoa:8
+Average Score:7.0
+------------------------
+ID:SV003
+Full name:Emily Johnson
+City:Miami
+Diem Toan:9
+Diem Ly:9
+Diem Hoa:10
+Average Score:9.333333333333334
+------------------------
+ID:SV004
+Full name:Michael Brown
+City:Houston
+Diem Toan:8
+Diem Ly:7
+Diem Hoa:8
+Average Score:7.666666666666667
+------------------------
+ID:SV005
+Full name:Sarah Davis
+City:San Francisco
+Diem Toan:7
+Diem Ly:8
+Diem Hoa:7
+Average Score:7.333333333333333
+------------------------
+ID:SV006
+Full name:James Wilson
+City:Seattle
+Diem Toan:8
+Diem Ly:8
+Diem Hoa:9
+Average Score:8.333333333333334
+------------------------
+ID:SV007
+Full name:Jennifer Miller
+City:Denver
+Diem Toan:7
+Diem Ly:9
+Diem Hoa:8
+Average Score:8.0
+------------------------
+ID:SV008
+Full name:William Taylor
+City:Boston
+Diem Toan:8
+Diem Ly:9
+Diem Hoa:7
+Average Score:8.0
+------------------------
+ID:SV009
+Full name:Elizabeth Anderson
+City:Dallas
+Diem Toan:9
+Diem Ly:8
+Diem Hoa:10
+Average Score:9.0
+------------------------
+ID:SV010
+Full name:Matthew Thomas
+City:Philadelphia
+Diem Toan:6
+Diem Ly:7
+Diem Hoa:6
+Average Score:6.333333333333333
+------------------------
+ID:SV011
+Full name:Sophia Martinez
+City:Phoenix
+Diem Toan:9
+Diem Ly:10
+Diem Hoa:9
+Average Score:9.333333333333334
+------------------------
+ID:SV012
+Full name:Daniel White
+City:San Diego
+Diem Toan:8
+Diem Ly:7
+Diem Hoa:8
+Average Score:7.666666666666667
+------------------------
+ID:SV013
+Full name:Emma Thompson
+City:Austin
+Diem Toan:9
+Diem Ly:9
+Diem Hoa:9
+Average Score:9.0
+------------------------
+ID:SV014
+Full name:David Harris
+City:Las Vegas
+Diem Toan:7
+Diem Ly:6
+Diem Hoa:7
+Average Score:6.666666666666667
+------------------------
+ID:SV015
+Full name:Olivia Clark
+City:Orlando
+Diem Toan:8
+Diem Ly:9
+Diem Hoa:8
+Average Score:8.333333333333334
+------------------------

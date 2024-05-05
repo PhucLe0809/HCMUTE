@@ -1,0 +1,35 @@
+--- BANKER ALGORITHM code by Le Hong Phuc ---
+A (10 instances), B (5 instances), C (7 instances)
+
+    ALLOCATION      MAX             NEED            AVAILABLE       RECORD      
+    A   B   C   |   A   B   C   |   A   B   C   |   A   B   C   |   A   B   C   |   
+P0  0   1   0   |   7   5   3   |   7   4   3   |   3   3   4   |   7   5   7   |   
+P1  2   0   0   |   3   2   2   |   1   2   2   |               |   5   3   4   |   
+P2  3   0   0   |   9   0   2   |   6   0   2   |               |   10  5   7   |   
+P3  2   1   1   |   2   2   2   |   0   1   1   |               |   7   4   5   |   
+P4  0   0   2   |   4   3   3   |   4   3   1   |               |   7   4   7   |   
+
+# Request for P0 (0, 0, 0) : P1 --> P3 --> P4 --> P0 --> P2
+-----------------------------------------------------------------
+
+    ALLOCATION      MAX             NEED            AVAILABLE       RECORD      
+    A   B   C   |   A   B   C   |   A   B   C   |   A   B   C   |   A   B   C   |   
+P0  0   1   0   |   7   5   3   |   7   4   3   |   0   0   4   |   0   0   0   |   
+P1  2   0   0   |   3   2   2   |   1   2   2   |               |   0   0   0   |   
+P2  3   0   0   |   9   0   2   |   6   0   2   |               |   0   0   0   |   
+P3  2   1   1   |   2   2   2   |   0   1   1   |               |   0   0   0   |   
+P4  3   3   2   |   4   3   3   |   1   0   1   |               |   0   0   0   |   
+
+# Request for P4 (3, 3, 0) : Request cannot be executed
+-----------------------------------------------------------------
+
+    ALLOCATION      MAX             NEED            AVAILABLE       RECORD      
+    A   B   C   |   A   B   C   |   A   B   C   |   A   B   C   |   A   B   C   |   
+P0  0   3   0   |   7   5   3   |   7   2   3   |   3   1   4   |   10  5   5   |   
+P1  2   0   0   |   3   2   2   |   1   2   2   |               |   7   2   5   |   
+P2  3   0   0   |   9   0   2   |   6   0   2   |               |   10  2   5   |   
+P3  2   1   1   |   2   2   2   |   0   1   1   |               |   5   2   5   |   
+P4  0   0   2   |   4   3   3   |   4   3   1   |               |   10  5   7   |   
+
+# Request for P0 (0, 2, 0) : P3 --> P1 --> P2 --> P0 --> P4
+-----------------------------------------------------------------

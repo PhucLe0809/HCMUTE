@@ -1,0 +1,28 @@
+void print_list(){}
+bool is_empty(){}
+int size_list(){}
+void insert_front(IntNode *inter){}
+void insert_back(IntNode *inter){}
+void insert_between(IntNode *pos, IntNode *inter){}
+void insert_less(IntNode *inter){}
+void move_front(){}
+void move_back(){}
+void move_between(IntNode *pos){}
+void move_value(IntNode *inter){}
+IntNode* find_max(){}
+IntNode* find_min(){}
+IntNode* find_value(IntNode *inter){}
+IntNode* find_lower(IntNode *inter){}
+IntNode* find_upper(IntNode *inter){}
+void selection_sort(){}
+vector<IntNode*> get_list_upper(IntNode *inter){}
+vector<IntNode*> get_list_value(IntNode *inter){}
+vector<IntNode*> get_list_max(){}
+vector<IntNode*> get_list_min(){}
+void erase_list_upper(IntNode *inter){}
+int count_value(IntNode *inter){}
+int count_negative(){}
+int count_positive(){}
+IntNode* find_greatest_negative(){}
+IntNode* find_smallest_positive(){}
+void quick_sort(){}

@@ -1,0 +1,44 @@
+===== void CALUSE() được viết dựa trên nền tảng lý thuyết Reverse Polish Natation-RPN được biên soạn trong SGK chuyên Tin quyển 2-PGS.TS.NGND Hồ Sĩ Đàm Tổng chủ biên.
+
+===== Chức năng chính: xử lí và in ra bảng Chân trị cho một dạng mệnh đề được nhập theo luồng file input (LOGIC.INP). Cho biết mệnh đề đã cho là hằng ĐÚNG, hằng SAI hay vừa là hằng ĐÚNG, vừa là hằng SAI. Xuất kết quả theo định dạng file output (CLAUSE.OUT).
+
+===== BẢNG QUY ƯỚC CÁC PHÉP TOÁN TRÊN MỆNH ĐỀ: một cách tương đối, đây là cách chúng tôi ghi nhận cách phép toán
+	& : phép toán NỐI LIỀN
+	| : phép toán NỐI RỜI
+	/ : phép toán NỐI RỜI LOẠI TRỪ
+	* : phép toán PHỦ ĐỊNH
+	- : phép toán KÉO THEO 1 CHIỀU
+	= : phép toán KÉO THEO 2 CHIỀU
+
+===== CHƯƠNG TRÌNH CHỈ NHẬN DẠNG MỆNH ĐỀ THỎA MÃN TẤT CẢ CÁC YÊU CẦU SAU:
+	1. Dạng mệnh đề chỉ bao gồm: 26 kí tự viết thường trong bảng chữ cái tiếng Anh; các kí tự phép toán &, |, /, *, -, =; dấu mở ngoặc ( và dấu đóng ngoặc ).
+	2. Dạng mệnh đề phải được viết đúng quy tắc Toán học.
+	3. Mỗi mệnh đề chỉ được biểu diễn bằng đúng 1 kí tự viết thường trong bảng chữ cái tiếng Anh.
+	4. Dạng mệnh đề bao gồm không quá 10 mệnh đề để đảm bảo tốc độ thuật toán.
+	5. Giữa 1 phép toán PHỦ ĐỊNH và một hay nhiều mệnh đề phải được đặt trong cặp dấu ( ).
+	Vd: 
+	*r-(p-q) thì chương trình sẽ hiểu là *(r-(p-q)), để tránh cách hiểu đó cần biểu diễn thành (*r)-(p-q)
+	nhưng khi ta viết (p-q)^**r thì chương trình sẽ hiểu là (p-q)^(*(*r))
+	
+===== QUY TẮC THỰC HIỆN:
+	1. Chương trình chỉ thực hiện đối với mệnh đề đã thỏa mãn tất cả các yêu cầu. Nếu dạng mệnh đề không thỏa thì chương trình không thể xử lí hoặc cho ra kết quả SAI yêu cầu.
+	2. Hàm <bool is_clause()> của chương trình chỉ kiểm tra các cặp đóng mở ngoặc có hợp lệ hay không hợp lệ.
+	3. Mức độ ưu tiên thực hiện được dựa trên các cặp ngoặc ( ). Nếu không có ưu tiên gì thêm thì Chương trình thực hiện dạng mệnh đề từ PHẢI sang TRÁI.
+	Vd: 
+	muốn thực hiện dạng mệnh đề sau: (p-q)=(*p)-(r&q) từ TRÁI qua PHẢI thì ta phải biểu diễn thành ((p-q)=(*p))-(r&q).
+
+===== NHÓM TÁC GIẢ:
+	1, LÊ HỒNG PHÚC
+	2, PHẠM KHÁNH HUY
+	3, TRANG KIM LỢI
+
+===== MỘT SỐ DẠNG MỆNH ĐỀ ĐÃ CHUYỂN ĐỔI:
+(p-q)&r
+(*p)-(p&q)
+((p-(*q))-q)&(*(p-q))
+((p|q)-r)=((*(p|q))|r)
+((p|q)-r)=((*r)-(*p|q))
+(*(a&b))&((*a)|b)&((*b)|b)
+((*(p|q))|r)=((*(p|q))|**(r))
+(((p-q)-(r-(*p)))-(q-(*r)))|*p
+(((p-q)&(r-s))&((s&q)-(p&t))&(t-(*p)))-((*p)|(*r))

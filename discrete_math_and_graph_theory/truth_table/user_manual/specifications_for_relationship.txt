@@ -1,0 +1,60 @@
+===== void RELATIONSHIP() xử lí mô hình đơn giản mối quan hệ R trên tập hợp X gồm các phần tử là các số nguyên dương.
+
+===== Chức năng chính: kiểm tra tính phản xạ, phản xứng, đối xứng, bắc cầu của một quan hệ R. Tìm phần tử lớn nhất, phần tử bé nhất, phần tử tối đại, phần tử tối tiểu.
+
+===== CHƯƠNG TRÌNH CHỈ NHẬN R THỎA MÃN CÁC YÊU CẦU đã nêu tại "Định dạng INPUT FILE: dữ liệu vào từ file LOGIC.INP" trong file rule.txt
+
+	
+===== QUY TẮC THỰC HIỆN:
+	1. Đầu tiên Chương trình thực hiện kiểm tra tính phản xạ, phản xứng, đối xứng, bắc cầu của quan hệ R.
+	2. Tiến hành kiểm tra R có là 1 quan hệ thứ tự hay không? Nếu Đúng thực hiện 3., ngược lại Thông báo! và kết thúc thực hiện trên quan hệ R.
+	3. Tìm phần tử lớn nhất, phần tử bé nhất, phần tử tối đại, phần tử tối tiểu dựa trên biểu đồ Hasse.
+
+
+===== NHÓM TÁC GIẢ:
+	1, LÊ HỒNG PHÚC
+	2, PHẠM KHÁNH HUY
+	3, TRANG KIM LỢI
+
+===== MỘT SỐ R THAM KHẢO:
+6 10
+1 2 3 4 5 6
+1 1
+2 2
+3 3
+4 4
+5 5
+6 6
+1 2
+2 1
+5 4
+4 5
+
+4 8
+1 2 3 4
+1 1
+2 2
+3 3
+4 4
+1 2
+1 3
+1 4
+2 4
+
+6 15
+1 2 3 4 5 6
+1 1
+2 2
+3 3 
+4 4
+5 5
+6 6
+3 1
+2 3
+3 4
+4 5
+4 6
+1 4
+2 4
+3 5
+3 6

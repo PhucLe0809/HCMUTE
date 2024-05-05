@@ -1,0 +1,24 @@
+void print_list(){}
+bool is_empty(){}
+int size_list(){}
+void insert_front(CarNode *car){}
+void insert_back(CarNode *car){}
+void insert_between(CarNode *pos, CarNode *car){}
+void move_front(){}
+void move_back(){}
+void move_between(CarNode *pos){}
+void move_value(CarNode *car){}
+CarNode* find_value(CarNode *car){}
+void selection_sort_by_price(){}
+CarNode* find_lower_by_price(CarNode *car){}
+CarNode* find_upper_by_price(CarNode *car){}
+CarNode* find_max_by_price(){}
+CarNode* find_min_by_price(){}
+void insert_less_by_price(CarNode *car){}
+vector<CarNode*> get_list_value_by_price(CarNode *car){}
+vector<CarNode*> get_list_lower_by_price(CarNode *car){}
+vector<CarNode*> get_list_upper_by_price(CarNode *car){}
+vector<CarNode*> get_list_right_by_price(int kth){}
+vector<CarNode*> get_list_left_by_price(int kth){}
+void erase_list_upper_by_price(CarNode *car){}
+void quick_sort_by_price(){}
